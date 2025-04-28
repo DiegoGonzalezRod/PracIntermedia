@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
+    tools:context=".ui.LoginActivity">
+
+    <!-- Logo de moda -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/login"
+        android:scaleType="fitCenter"
+        />
+
+    <!-- Campo de correo -->
+    <EditText
+        android:id="@+id/editCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:drawableLeft="@drawable/user"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:drawablePadding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#888"
+        android:inputType="textEmailAddress" />
+
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="Contraseña"
+        android:drawableLeft="@drawable/pass"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:drawablePadding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#888"
+        android:inputType="textPassword" />
+
+    <!-- Botón login -->
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="Iniciar sesión"
+        android:backgroundTint="#222222"
+        android:textColor="#ffffff" />
+
+    <!-- Sección de crear cuenta -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta?"
+            android:textColor="#555"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/botonSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="#FF4081"
+            android:textSize="14sp"
+            android:layout_marginLeft="8dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
